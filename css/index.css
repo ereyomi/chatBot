@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #007FEF;
+  font-family: 'Open Sans', sans-serif;
+}
+#app {
+  width: 100vw;
+  height: 90vh;
+  max-height: 90vh;
+  /* padding: 2.5rem; */
+  padding-bottom: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  align-self: flex-end;
+  background: #F5F7F9;
+  box-shadow: 0 0 12px rgba(black, 0.3);
+  border-radius: 8px 8px 0 0;
+}
+#app-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100%;
+  padding: 10px;
+}
+ 
+.chat {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: flex-end;
+    align-items: center; 
+    word-break: break-all;
+}
+.bot {
+    grid-template-columns: 4rem auto;
+    justify-content: flex-start !important;
+}
+.thumbnail {
+    width: 4rem;
+    height: 4rem;
+    background: white;
+}
+.thumbnail img{
+    max-width: 100%;
+    border-radius: 100em;
+}
+.text {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: rgb(108, 171, 230);
+    color: white;
+    
+}
+.text-user {
+    background-color: rgb(248, 178, 72);
+}
+#input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#input-box input,
+#input-box button {
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+}
+#input-box input {
+    width: 80%;
+    border-radius: 5px 0px 0px 5px;
+}
+#input-box button {
+    width: 20%;
+    cursor: pointer;
+    background: rgb(108, 171, 230);
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+}
