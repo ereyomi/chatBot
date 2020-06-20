@@ -45,6 +45,7 @@ body {
 .thumbnail {
     width: 4rem;
     height: 4rem;
+    padding: 3px;
     background: white;
 }
 .thumbnail img{
@@ -52,16 +53,62 @@ body {
     border-radius: 100em;
 }
 .text {
-    margin-left: 5px;
     font-size: 1.2rem;
     padding: 4px 8px;
     border-radius: 8px;
     background: rgb(108, 171, 230);
     color: white;
-    
 }
 .text-user {
-    background-color: rgb(248, 178, 72);
+    background-color: rgb(44, 184, 184);
+}
+.dotsContainer{
+    background: rgb(108, 171, 230);
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  #dot1,
+  #dot2,
+  #dot3 {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    margin: 3px;
+    transition: all 0.5s ease-in-out;
+    animation: typing 1s infinite;
+  }
+
+  #dot1 {
+    animation-delay: 1s;
+  }
+
+  #dot2 {
+    animation-delay: 0.5s;
+  }
+
+  #dot3 {
+    animation-delay: 0.8s;
+  }
+
+@keyframes typing {
+  0% {
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+  }
+
+  50% {
+    transform: translateY(-5px);
+    transition: all 0.5s ease-in-out;
+  }
+
+  100% {
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+  }
 }
 #input-box {
     width: 100%;
@@ -77,6 +124,7 @@ body {
 #input-box input {
     width: 80%;
     border-radius: 5px 0px 0px 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 #input-box button {
     width: 20%;
@@ -84,4 +132,7 @@ body {
     background: rgb(108, 171, 230);
     color: white;
     border-radius: 0px 5px 5px 0px;
+}
+@media screen and (min-screen: 500px) {
+
 }
