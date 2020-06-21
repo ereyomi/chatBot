@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
   justify-content: center;
   background: #007FEF;
   font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
 }
 #app {
   width: 100vw;
@@ -22,14 +24,14 @@ body {
   box-shadow: 0 0 12px rgba(black, 0.3);
   border-radius: 8px 8px 0 0;
 }
-#app-inner {
+#app-inner,
+#chat-box {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   min-height: 100%;
   padding: 10px;
 }
- 
 .chat,
 .loading {
     width: 100%;
