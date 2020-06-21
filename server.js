@@ -103,7 +103,7 @@ app.post( '/api/botreply', replyToUser)
 
 // Setup Server
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 const server = app.listen( port, () => {
     console.log( "server running" );
