@@ -11,7 +11,7 @@ body {
 }
 #app {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   max-height: 90vh;
   /* padding: 2.5rem; */
   padding-bottom: 0;
@@ -47,7 +47,6 @@ body {
     width: 4rem;
     height: 4rem;
     padding: 3px;
-    background: white;
 }
 .thumbnail img{
     max-width: 100%;
